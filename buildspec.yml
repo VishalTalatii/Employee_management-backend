@@ -20,23 +20,27 @@ version: 0.2
   #build-matrix:
   #build-graph:
 phases:
-  #install:
+  install:
     #If you use the Ubuntu standard image 2.0 or later, you must specify runtime-versions.
     #If you specify runtime-versions and use an image other than Ubuntu standard image 2.0, the build fails.
     #runtime-versions:
       # name: version
       # name: version
-    #commands:
-      # - command
-      # - command
+    commands:
+      - echo installing maven...
+      - apt-get update -y
+      - apt-get install -y maven
   #pre_build:
     #commands:
       # - command
       # - command
   build:
     commands:
-       - mvn test
-       - mvn install
+      #  - mvn test
+      #  - mvn install
+      - echo building the springboot-crud-api-0.0.1
+      - mvn install
+
       # - command
   #post_build:
     #commands:
@@ -55,3 +59,7 @@ artifacts:
      - target/springboot-crud-api-0.0.1-SNAPSHOT.jar
      - scripts/*.sh
      - appspec.yml
+
+cache:
+  paths:
+  - '/root/.m2/**/*'
