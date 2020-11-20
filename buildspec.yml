@@ -29,7 +29,6 @@ phases:
     commands:
       - echo installing maven...
       - apt-get update -y
-      - apt-get install -y maven
   #pre_build:
     #commands:
       # - command
@@ -39,6 +38,7 @@ phases:
       #  - mvn test
       #  - mvn install
       - echo building the springboot-crud-api-0.0.1
+      - mvn clean
       - mvn install
 
       # - command
