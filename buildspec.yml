@@ -1,0 +1,18 @@
+version: 0.2
+  install:
+    commands:
+    - echo installing maven...
+    - apt-get update -y
+    - apt-get install -y maven
+  build:
+    commands:
+    - echo building springboot-crud-api-0.0.1-SNAPSHOT
+    - mvn install
+artifacts:
+  files:
+  - target/*.jar
+  - scripts/*.sh
+  - appspec.yml
+  discard-paths: yescache:
+  paths:
+  - '/root/.m2/**/*'
