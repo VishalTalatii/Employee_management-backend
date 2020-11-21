@@ -3,7 +3,10 @@ os: linux
 files:
   - source: ./springboot-crud-api-0.0.1-SNAPSHOT.jar
     destination: /home/ec2-user
-
+ApplicationStart:
+    - location: scripts/start_server
+      timeout: 700
+      runas: root
 
 
 # version: 0.0
