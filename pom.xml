@@ -12,7 +12,7 @@
 	<artifactId>springboot-crud-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>springboot-crud-api</name>
-	<description>Demo project for Spring Boot</description>
+	<description>project for Spring Boot</description>
 
 	<properties>
 		<java.version>11</java.version>
