@@ -8,7 +8,6 @@ ApplicationStart:
       timeout: 700
       runas: root
 
-
 # version: 0.0
 # os: linux
 # files:

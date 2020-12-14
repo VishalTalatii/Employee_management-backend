@@ -19,10 +19,6 @@ artifacts:
     - appspec.yml
   discard-paths: yes
 
-
-
-
-
 # version: 0.2
 # #
 # #env:
