@@ -17,11 +17,7 @@
 	<properties>
 		<java.version>11</java.version>
 	</properties>
-	<properties>
-  		<sonar.projectKey>VishalTalatii_Employee_management-backend</sonar.projectKey>
-  		<sonar.organization>vishaltalatii</sonar.organization>
-  		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
-	</properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
